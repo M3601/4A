@@ -1,0 +1,196 @@
+{
+  "dati": [
+    {
+      "titolo": "Ok Giovanni",
+      "data": "11/06/2020",
+      "tipo": "messaggio",
+      "messaggi": [
+        {
+          "mittente": "Emanuele De Donno",
+          "ora": "01:58",
+          "testo": "visto cuiune"
+        },
+        {
+          "mittente": "Giovanni De Donno",
+          "ora": "01:58",
+          "testo": "mamma mia percè respiri ncora"
+        }
+      ]
+    },
+    {
+      "titolo": "Giovanni aggressivo",
+      "data": "11/06/2020",
+      "tipo": "messaggio",
+      "messaggi": [
+        {
+          "mittente": "Alessia Siciliano",
+          "ora": "01:58",
+          "testo": "vidi tuttu sacciu"
+        },
+        {
+          "mittente": "Giovanni De Donno",
+          "ora": "01:59",
+          "testo": "sai puru ca sinti cujuna?"
+        },
+        {
+          "mittente": "Giovanni De Donno",
+          "ora": "01:59",
+          "testo": "(scusa)"
+        }
+      ]
+    },
+    {
+      "titolo": "Emanuele...",
+      "data": "11/06/2020",
+      "tipo": "messaggio",
+      "messaggi": [
+        {
+          "mittente": "Emanuele De Donno",
+          "ora": "02:06",
+          "testo": "all'alessia gli piace quando gli tiro gli schiaffi"
+        },
+        {
+          "mittente": "Emanuele De Donno",
+          "ora": "02:06",
+          "testo": "dice dammene ancora"
+        }
+      ]
+    },
+    {
+      "titolo": "Totaro incoerente",
+      "data": "05/10/2020",
+      "tipo": "messaggio",
+      "messaggi": [
+        {
+          "mittente": "Davide Totaro",
+          "ora": "19:40",
+          "audio": "audio/2020-10-05-19.40.14.ogg"
+        }
+      ]
+    },
+    {
+      "titolo": "Oggi D'Autilia è furioso",
+      "data": "05/10/2020",
+      "tipo": "messaggio",
+      "messaggi": [
+        {
+          "mittente": "Riccardo D'Autilia",
+          "ora": "21:11",
+          "testo": "Dio porco animale bastardo madonna puttana e Gesù che barbone e tutti li santi de Gesù Cristu cu morune tutti de paru de infartu fulminante"
+        },
+        {
+          "mittente": "Riccardo D'Autilia",
+          "ora": "21:11",
+          "testo": "Li morti de la gorgoni"
+        },
+        {
+          "mittente": "Riccardo D'Autilia",
+          "ora": "21:12",
+          "testo": "Va fanne bocchini alla via de lecce buttana"
+        },
+        {
+          "mittente": "Riccardo D'Autilia",
+          "ora": "21:12",
+          "testo": "Li morti de mammasa menu"
+        }
+      ]
+    },
+    {
+      "titolo": "Giovanni no",
+      "data": "05/10/2020",
+      "tipo": "messaggio",
+      "messaggi": [
+        {
+          "mittente": "Giovanni De Donno",
+          "ora": "21:17",
+          "testo": "Ma ieu sta trasu pe l assenze"
+        },
+        {
+          "mittente": "Giovanni De Donno",
+          "ora": "21:17",
+          "testo": "No pe matrima"
+        },
+        {
+          "mittente": "Giovanni De Donno",
+          "ora": "21:17",
+          "testo": "Matrima sai che cazzu se ne futte"
+        },
+        {
+          "mittente": "Giovanni De Donno",
+          "ora": "21:17",
+          "testo": "Tantu sape ca su nu fallito"
+        }
+      ]
+    },
+    {
+      "titolo": "Il padre di Marra fa paura",
+      "data": "05/10/2020",
+      "tipo": "messaggio",
+      "messaggi": [
+        {
+          "mittente": "Mattia Marra",
+          "ora": "21:18",
+          "testo": "Se tinivi unu comu e quantu sirma nu sacciu se li rispunnivi😂"
+        },
+        {
+          "mittente": "Giovanni De Donno",
+          "ora": "21:18",
+          "testo": "Se ete quantu tie nu bale"
+        },
+        {
+          "mittente": "Mattia Marra",
+          "ora": "21:18",
+          "testo": "Ertu si ma vaje nu quintale ma nu de panza de potenza pd"
+        },
+        {
+          "mittente": "Giovanni De Donno",
+          "ora": "21:19",
+          "testo": "Nu boju lo conoscu llora"
+        },
+        {
+          "mittente": "Mattia Marra",
+          "ora": "21:20",
+          "testo": "Mio padre mi fa paura😂"
+        },
+        {
+          "mittente": "Mattia Marra",
+          "ora": "21:21",
+          "testo": "E troppo potente"
+        },
+        {
+          "mittente": "Mattia Marra",
+          "ora": "21:21",
+          "testo": "Mi concede molte cose ma se dice na cosa è quira me dispiace"
+        },
+        {
+          "mittente": "Emanuele De Donno",
+          "ora": "21:21",
+          "testo": "pivello"
+        },
+        {
+          "mittente": "Mattia Marra",
+          "ora": "21:22",
+          "testo": "Na fiata me tirau na causce me dulutu u culu mancu Ca era pijatu Lu cazzu de ibarbo"
+        }
+      ]
+    },
+    {
+      "titolo": "D'Autilia spacca tutto",
+      "data": "05/10/2020",
+      "tipo": "messaggio",
+      "messaggi": [
+        {
+          "mittente": "Riccardo D'Autilia",
+          "ora": "21:21",
+          "audio": "audio/2020-10-05-21.21.39.ogg"
+        }
+      ]
+    },
+    {
+      "titolo": "Immagini del giorno",
+      "data": "19/10/2020",
+      "tipo": "immagine",
+      "immagini": [{ "pos": "685898.jpg" }, { "pos": "881352.jpg" }]
+    }
+  ]
+}

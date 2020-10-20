@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4A</title>
+    <meta name="theme-color" content="#80DEEA">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- comando: ejs .\index.ejs -f .\dati.json -o .\index.html -->
+    <div class="modal hide">
+        <div class="exit">×</div>
+        <div class="indietro">&#8249;</div>
+        <div class="avanti">&#8250;</div>
+        <img id="modal-img" src="" alt="">
+    </div>
+    <div class="dati">
+        <% for (let el of dati) { %>
+        <div class="card">
+            <div class="title"><%=el.titolo%></div>
+            <div class="data"><%=el.data%></div>
+            <hr>
+            <% if (el.tipo=='messaggio') {%>
+            <div class="info">
+                <% for (let mex of el.messaggi) { %>
+                <% if (mex.testo) {%>
+                <div class="messaggio">
+                    <div class="orario"><%=mex.ora%></div>
+                    <div class="mittente"><%=mex.mittente%></div>
+                    <div class="testo"><%=mex.testo%></div>
+                </div>
+                <% } else if(mex.audio) {%>
+                <div class="audio">
+                    <div class="orario"><%=mex.ora%></div>
+                    <div class="mittente"><%=mex.mittente%></div>
+                    <audio src="<%=mex.audio%>" controls></audio>
+                </div>
+                <% } %>
+                <% } %>
+            </div>
+            <% } else if (el.tipo=='immagine'){%>
+            <div class="immagini">
+                <% for (let im of el.immagini) { %>
+                <div class="immagine">
+                    <img src="<%=im.pos%>" alt="">
+                </div>
+                <% } %>
+            </div>
+            <% } %>
+        </div>
+        <% } %>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
