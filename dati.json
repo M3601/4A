@@ -190,7 +190,14 @@
       "titolo": "Immagini del giorno",
       "data": "19/10/2020",
       "tipo": "immagine",
-      "immagini": [{ "pos": "685898.jpg" }, { "pos": "881352.jpg" }]
+      "immagini": [
+        { "pos": "685898.jpg" },
+        { "pos": "881352.jpg" },
+        { "pos": "685898.jpg" },
+        { "pos": "881352.jpg" },
+        { "pos": "685898.jpg" },
+        { "pos": "881352.jpg" }
+      ]
     }
   ]
 }

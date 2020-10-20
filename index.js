@@ -34,12 +34,29 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   var modalitem;
   document.querySelectorAll(".immagini").forEach((el) => {
-    if (el.children.length > 4) el.classList.add("plus");
+    if (el.children.length > 4) {
+      el.classList.add("plus");
+      let newelem = document.createElement("div");
+      newelem.classList.add("c");
+      newelem.appendChild(
+        document.createTextNode(`+${el.children.length - 3}`)
+      );
+      el.appendChild(newelem);
+    }
     el.addEventListener("click", (e) => {
+      if (e.target.src) {
+        modalitem = e.target;
+        document.querySelector("#modal-img").attributes.src.value =
+          e.target.attributes.src.value;
+        document.querySelector(".modal").classList.remove("hide");
+      }
+    });
+  });
+  document.querySelectorAll(".c").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      modalitem = e.target.parentElement.children[0].children[0];
+      document.querySelector("#modal-img").attributes.src.value = modalitem.src;
       document.querySelector(".modal").classList.remove("hide");
-      modalitem = e.target;
-      document.querySelector("#modal-img").attributes.src.value =
-        e.target.attributes.src.value;
     });
   });
   document.querySelector(".exit").addEventListener("click", () => {
@@ -67,7 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ).indexOf(modalitem.parentElement);
     if (index + 1 >= modalitem.parentElement.parentElement.children.length)
       return;
-    else
+    else if (
+      modalitem.parentElement.parentElement.children[index + 1].children[0].src
+    )
       modalitem =
         modalitem.parentElement.parentElement.children[index + 1].children[0];
     document.querySelector("#modal-img").attributes.src.value =
@@ -75,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   document.addEventListener("keydown", (e) => {
     if (e.key === "ArrowLeft") {
-      if (modalitem == undefined) return;
+      if (!modalitem) return;
       let index = Array.from(
         modalitem.parentElement.parentElement.children
       ).indexOf(modalitem.parentElement);
@@ -92,7 +111,10 @@ document.addEventListener("DOMContentLoaded", () => {
       ).indexOf(modalitem.parentElement);
       if (index + 1 >= modalitem.parentElement.parentElement.children.length)
         return;
-      else
+      else if (
+        modalitem.parentElement.parentElement.children[index + 1].children[0]
+          .src
+      )
         modalitem =
           modalitem.parentElement.parentElement.children[index + 1].children[0];
       document.querySelector("#modal-img").attributes.src.value =
@@ -142,7 +164,10 @@ document.addEventListener("DOMContentLoaded", () => {
           modalitem.parentElement.parentElement.children
         ).indexOf(modalitem.parentElement);
         if (index < 1) return;
-        else
+        else if (
+          modalitem.parentElement.parentElement.children[index + 1].children[0]
+            .src
+        )
           modalitem =
             modalitem.parentElement.parentElement.children[index - 1]
               .children[0];
