@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -364,10 +365,114 @@
           transform: scale(0);
 }
 
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  background: #4db6ac;
+}
+
+.foot * {
+  margin: 0 4px;
+}
+
+.foot p {
+  color: white;
+  font-weight: 700;
+}
+
+.foot .heart {
+  margin-left: -4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  width: 5vh;
+}
+
+.foot .heart svg {
+  position: absolute;
+  height: 2vh;
+  fill: red;
+  -webkit-animation: pulse 1.5s ease-in-out infinite;
+          animation: pulse 1.5s ease-in-out infinite;
+}
+
+.foot a {
+  font-weight: 800;
+  font-family: "Ubuntu Mono", "Courier New", Courier, monospace;
+  font-size: 2.5vh;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-decoration: none;
+  background: #f9d423;
+  background: -webkit-gradient(linear, left top, right top, from(#f9d423), to(#ff4e50));
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    height: 2vh;
+  }
+  30% {
+    height: 2.5vh;
+  }
+  45% {
+    height: 1.8vh;
+  }
+  75% {
+    height: 3vh;
+  }
+  100% {
+    height: 2vh;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    height: 2vh;
+  }
+  30% {
+    height: 2.5vh;
+  }
+  45% {
+    height: 1.8vh;
+  }
+  75% {
+    height: 3vh;
+  }
+  100% {
+    height: 2vh;
+  }
+}
+
 @media (max-width: 1024px) {
   .dati {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .modal .avanti,
   .modal .indietro {
