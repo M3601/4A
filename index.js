@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector("#modal-img").attributes.src.value =
         modalitem.attributes.src.value;
     }
+    if (e.key === "Escape") document.querySelector(".exit").click();
   });
 
   var initialX = null;
