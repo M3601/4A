@@ -333,6 +333,15 @@
   }
 }
 
+@keyframes pulse2 {
+  0% {
+    box-shadow: 0 0 0 0 rgba($color: #ff4e50, $alpha: 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba($color: #ff4e50, $alpha: 0);
+  }
+}
+
 @media (max-width: 1024px) {
   .dati {
     grid-template-columns: 1fr 1fr;

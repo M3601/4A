@@ -146,6 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (Math.abs(diffX) > Math.abs(diffY)) {
       if (diffX > 0) {
         //left
+        console.dir("left");
         if (modalitem == undefined) return;
         let index = Array.from(
           modalitem.parentElement.parentElement.children
@@ -153,20 +154,25 @@ document.addEventListener("DOMContentLoaded", () => {
         if (index + 1 >= modalitem.parentElement.parentElement.children.length)
           return;
         else
-          modalitem =
+          try {
             modalitem.parentElement.parentElement.children[index + 1]
-              .children[0];
+              .children[0].src;
+            modalitem =
+              modalitem.parentElement.parentElement.children[index + 1]
+                .children[0];
+          } catch (error) {}
         document.querySelector("#modal-img").attributes.src.value =
           modalitem.attributes.src.value;
       } else {
         //right
+        console.dir("right");
         if (modalitem == undefined) return;
         let index = Array.from(
           modalitem.parentElement.parentElement.children
         ).indexOf(modalitem.parentElement);
         if (index < 1) return;
         else if (
-          modalitem.parentElement.parentElement.children[index + 1].children[0]
+          modalitem.parentElement.parentElement.children[index - 1].children[0]
             .src
         )
           modalitem =
