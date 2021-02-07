@@ -1670,6 +1670,18 @@
           "audio": "audio/2020-12-22-12.56.47.ogg"
         }
       ]
+    },
+    {
+      "titolo": "Anno nuovo, vita nuova",
+      "data": "01/01/2021",
+      "tipo": "messaggio",
+      "messaggi": [
+        {
+          "mittente": "Emanuele De Donno",
+          "ora": "00:24",
+          "audio": "audio/2021-01-01-00.24.25.ogg"
+        }
+      ]
     }
   ]
 }
