@@ -19,7 +19,7 @@
     </div>
     <input type="checkbox" name="dark-switcher" id="dark-switcher">
     <div class="dati">
-        <% for (let el of dati) { %>
+        <% for (let el of Array.prototype.reverse.apply(dati)) { %>
             <div class="card">
                 <div class="title">
                     <%=el.titolo%>
